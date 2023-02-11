@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,45 +32,6 @@ class MyApp extends StatelessWidget {
         // backgroundColor: const Color(0xff625B39),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search Coming soon....'),
-      ),
-      // backgroundColor: Theme.of(context).primaryColor,
-      body: Column(
-        children: const <Widget>[
-          Padding(
-            padding: EdgeInsets.all(40),
-            child: Text(
-              "Courses",
-              style: TextStyle(color: Colors.white, fontSize: 40),
-            ),
-          )
-        ],
-      ),
     );
   }
 }
