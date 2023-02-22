@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "370873476668",
+    "project_id": "cs361-final-project-1c6cf",
+    "storage_bucket": "cs361-final-project-1c6cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370873476668:android:1dcbcf3693df97f1c08539",
+        "android_client_info": {
+          "package_name": "com.cheahy.classass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370873476668-bheu75v7ajg9mfnacdtqnq98rrmqr0f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIZEMpZ_qDql7iUveigIr6d7UbIj5c_B4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370873476668-bheu75v7ajg9mfnacdtqnq98rrmqr0f6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370873476668-231gveaencqb6nhs785cbehd21r4r5kp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.classAssessmentApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370873476668:android:091e6681fd20e416c08539",
+        "android_client_info": {
+          "package_name": "com.example.class_assessment_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370873476668-bheu75v7ajg9mfnacdtqnq98rrmqr0f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIZEMpZ_qDql7iUveigIr6d7UbIj5c_B4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370873476668-bheu75v7ajg9mfnacdtqnq98rrmqr0f6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370873476668-231gveaencqb6nhs785cbehd21r4r5kp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.classAssessmentApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
