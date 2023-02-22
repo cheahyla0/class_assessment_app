@@ -1,3 +1,4 @@
+import 'package:class_assessment_app/pages/about_us.dart';
 import 'package:class_assessment_app/pages/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 1;
   final List _screens = [
-    const Text('Index 1: Business'),
+    const AboutUs(),
     Dashboard(),
     const Text('Index 2: School'),
   ];

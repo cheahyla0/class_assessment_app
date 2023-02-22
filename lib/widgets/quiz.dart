@@ -29,7 +29,7 @@ class Quiz extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(top: 20),
                 child: Icon(
-                  Icons.book,
+                  Icons.quiz,
                   color: Colors.white,
                   size: 50.0,
                 ),
