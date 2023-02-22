@@ -1,3 +1,4 @@
+import 'package:class_assessment_app/pages/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -9,11 +10,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _selectedIndex = 1;
+  final List _screens = [
+    const Text('Index 1: Business'),
+    Dashboard(),
+    const Text('Index 2: School'),
+  ];
 
-  void _incrementCounter() {
+  void _selectScreen(int index) {
     setState(() {
-      _counter++;
+      _selectedIndex = index;
     });
   }
 
@@ -21,31 +27,33 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search Coming soon....'),
+        toolbarHeight: 0,
+        backgroundColor: Colors.blueGrey[800],
       ),
-      // backgroundColor: Theme.of(context).primaryColor,
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(top: 40, left: 40),
-            child: Row(
-              children: const <Widget>[
-                Text(
-                  "Courses",
-                  style: TextStyle(color: Colors.white, fontSize: 40),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 10, left: 10),
-                  child: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                    size: 30.0,
-                  ),
-                ),
-              ],
-            ),
+      body: _screens[_selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'About Us',
+            backgroundColor: Color(0xff30444E),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+            backgroundColor: Color(0xff30444E),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+            backgroundColor: Color(0xff30444E),
           ),
         ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white,
+        type: BottomNavigationBarType.shifting,
+        onTap: _selectScreen,
       ),
     );
   }
