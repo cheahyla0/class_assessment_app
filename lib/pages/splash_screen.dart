@@ -1,18 +1,18 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'dashboard.dart';
+import 'signin.dart';
 
-class Loading extends StatefulWidget {
-  const Loading({super.key, required this.time});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key, required this.time});
 
   final int time;
 
   @override
-  State<Loading> createState() => _LoadingState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _LoadingState extends State<Loading> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   initState() {
     super.initState();
@@ -21,7 +21,7 @@ class _LoadingState extends State<Loading> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => Dashboard(),
+          builder: (context) => SignIn(),
         ),
       ),
     );
@@ -31,13 +31,21 @@ class _LoadingState extends State<Loading> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Cheahy Lao"),
-        backgroundColor: Colors.green,
+        toolbarHeight: 0,
+        backgroundColor: Colors.blueGrey[800],
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
-            Text("Cheahy Lao"),
+            Image(image: AssetImage('assets/images/logo.png')),
+            Padding(
+              padding: EdgeInsets.only(top: 50),
+              child: Text(
+                "Join Our Awesome CS 361 class",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
           ],
         ),
       ),
