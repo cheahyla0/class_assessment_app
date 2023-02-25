@@ -1,4 +1,4 @@
-import 'package:class_assessment_app/pages/about_us.dart';
+import 'package:class_assessment_app/pages/aboutus.dart';
 import 'package:class_assessment_app/pages/dashboard.dart';
 import 'package:class_assessment_app/pages/profile.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 1;
   final List _screens = [
-    const AboutUs(),
+    AboutUs(),
     Dashboard(),
     Profile(),
   ];
