@@ -72,7 +72,7 @@ class _Register1State extends State<Register1> {
                             style: TextStyle(
                                 color: Color.fromRGBO(255, 255, 255, 100)),
                             decoration: InputDecoration(
-                              hintText: 'Username',
+                              hintText: 'Name',
                               hintStyle: TextStyle(
                                 color: Color.fromRGBO(150, 167, 175, 100),
                                 fontSize: 18,
@@ -94,10 +94,10 @@ class _Register1State extends State<Register1> {
                         height: 48,
                         width: 38,
                         child: const Icon(
-                          Icons.lock,
-                          color: Color.fromRGBO(255, 85, 95, 100),
+                          Icons.person,
+                          color: Color.fromRGBO(255, 197, 66, 100),
                         ),
-                        color: const Color.fromRGBO(98, 58, 66, 100),
+                        color: const Color.fromRGBO(98, 91, 57, 100),
                       ),
                       Container(
                         height: 48,
@@ -109,7 +109,7 @@ class _Register1State extends State<Register1> {
                                 color: Color.fromRGBO(255, 255, 255, 100)),
                             obscureText: true,
                             decoration: InputDecoration(
-                              labelText: 'Password',
+                              labelText: 'Username',
                               labelStyle: TextStyle(
                                 color: Color.fromRGBO(150, 167, 175, 100),
                                 fontSize: 18,
