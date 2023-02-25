@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
-            Image(image: AssetImage('assets/images/logo.png')),
+            Image(image: AssetImage('images/logo.png')),
             Padding(
               padding: EdgeInsets.only(top: 50),
               child: Text(
