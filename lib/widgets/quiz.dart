@@ -1,4 +1,4 @@
-import 'package:class_assessment_app/pages/quizzes.dart';
+import 'package:class_assessment_app/pages/quizz.dart';
 import 'package:flutter/material.dart';
 
 class Quiz extends StatelessWidget {
@@ -7,14 +7,21 @@ class Quiz extends StatelessWidget {
 
   const Quiz({super.key, required this.color, required this.title});
 
-  void _changePage(BuildContext context) {
-    print('yes');
+  void _changePage(BuildContext context, String title) {
+    Navigator.push(
+      context,
+      MaterialPageRoute<void>(
+        builder: (BuildContext context) => Quizz(
+          numberNo: title.split(' ')[title.split(' ').length - 1],
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => {_changePage(context)},
+      onTap: () => {_changePage(context, title)},
       child: Padding(
         padding: const EdgeInsets.only(top: 20, left: 40),
         child: Container(
@@ -29,7 +36,7 @@ class Quiz extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(top: 20),
                 child: Icon(
-                  Icons.book,
+                  Icons.quiz,
                   color: Colors.white,
                   size: 50.0,
                 ),
