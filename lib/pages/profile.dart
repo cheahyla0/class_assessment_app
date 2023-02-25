@@ -27,7 +27,7 @@ class _ProfileState extends State<Profile> {
                   children: const <Widget>[
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage('assets/images/logo.png'),
+                      backgroundImage: AssetImage('images/logo.png'),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20),
