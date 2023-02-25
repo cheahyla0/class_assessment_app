@@ -22,12 +22,12 @@ class _QuizzesState extends State<Quizzes> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Row(children: const <Widget>[
-                Quiz(color: Colors.green, title: "Math 101"),
-                Quiz(color: Colors.blue, title: "Math 102"),
+                Quiz(color: Colors.green, title: "Quiz 1"),
+                Quiz(color: Colors.blue, title: "Quiz 2"),
               ]),
               Row(children: const <Widget>[
-                Quiz(color: Colors.red, title: "Math 103"),
-                Quiz(color: Colors.purple, title: "Math 104"),
+                Quiz(color: Colors.red, title: "Quiz 3"),
+                Quiz(color: Colors.purple, title: "Quiz 4"),
               ]),
             ],
           ),

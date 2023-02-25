@@ -45,7 +45,7 @@ class _AboutUsState extends State<AboutUs> {
                 Text(
                   "This is a description of the person.",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.white, 
                     fontSize: 20,
                   ),
                 ),
