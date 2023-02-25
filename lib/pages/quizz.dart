@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:class_assessment_app/widgets/quiz.dart';
 import 'package:class_assessment_app/widgets/question.dart';
+import 'package:class_assessment_app/pages/home_page.dart';
 
 class Quizz extends StatefulWidget {
   final String numberNo;
@@ -47,7 +48,14 @@ class _QuizzState extends State<Quizz> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(
+                context,
+                new MaterialPageRoute(
+                  builder: (context) => MyHomePage(),
+                ),
+              );
+            },
           )
         ],
       ),

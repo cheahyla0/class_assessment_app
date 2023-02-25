@@ -107,7 +107,6 @@ class _Register1State extends State<Register1> {
                           child: TextField(
                             style: TextStyle(
                                 color: Color.fromRGBO(255, 255, 255, 100)),
-                            obscureText: true,
                             decoration: InputDecoration(
                               labelText: 'Username',
                               labelStyle: TextStyle(
